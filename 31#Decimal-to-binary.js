@@ -1,4 +1,4 @@
-
+// Program to decimal number to Binary number
 
 function deciToBinary(n) {
     let R;
@@ -18,6 +18,26 @@ function deciToBinary(n) {
     }
     console.log(Number(rev));
 }
+
+// Program to Binary number to decimal number
+
+function binToDec(n) {
+    numL = String(n);
+    let rem;
+    let sum = 0;
+    for(let i = 0; i < numL.length; i++) {
+        rem = n % 10;
+        n = parseInt(n / 10);
+        sum = sum + rem * (2 ** i);
+    }
+    console.log(sum);
+}
+
+binToDec(1100);
+binToDec(1001011);
+binToDec(10010);
+binToDec(10100);
+binToDec(1001);
 
 deciToBinary(12);
 deciToBinary(9);
