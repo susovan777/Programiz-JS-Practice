@@ -34,13 +34,16 @@ function binToDec(n) {
 }
 
 binToDec(1100);
-binToDec(1001011);
-binToDec(10010);
-binToDec(10100);
-binToDec(1001);
-
 deciToBinary(12);
-deciToBinary(9);
+
+binToDec(1001011);
 deciToBinary(75);
+
+binToDec(10010);
 deciToBinary(18);
+
+binToDec(10100);
 deciToBinary(20);
+
+binToDec(1001);
+deciToBinary(9);
